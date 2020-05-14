@@ -96,7 +96,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/size_80dp"
         android:background="@color/colorAccent"
-        android:text="DONE"
+        android:text="@string/done"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/size_20dp" />
 
