@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RatingsCalculator</string>
+    <string name="start">START</string>
+    <string name="final_ratings">Final Ratings :</string>
+    <string name="ratings_for_food">Ratings for Food:</string>
+    <string name="ratings_for_service">Ratings for Service:</string>
+    <string name="ratings_for_ambience">Ratings for Ambience:</string>
 </resources>

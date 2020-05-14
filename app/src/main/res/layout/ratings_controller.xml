@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rating_screen"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ratings_for_food"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_20dp"
+            android:textStyle="italic" />
+
+        <SeekBar
+            android:id="@+id/food_rating"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:max="5"
+            android:min="0" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:text="@string/ratings_for_service"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_20dp"
+            android:textStyle="italic" />
+
+        <SeekBar
+            android:id="@+id/service_rating"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:max="5"
+            android:min="0" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:text="@string/ratings_for_ambience"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_20dp"
+            android:textStyle="italic" />
+
+        <SeekBar
+            android:id="@+id/ambience_rating"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:max="5"
+            android:min="0" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_80dp"
+        android:background="@color/colorAccent"
+        android:text="DONE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/size_20dp" />
+
+</LinearLayout>
