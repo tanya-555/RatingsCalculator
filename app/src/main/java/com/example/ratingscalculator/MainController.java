@@ -41,7 +41,9 @@ public class MainController extends Controller implements RatingsCallback {
     }
 
     private void launchController() {
-        getRouter().pushController(RouterTransaction.with(new RatingsController(this)));
+        RatingsController controller = new RatingsController();
+        controller.registerCallback(this);
+        getRouter().pushController(RouterTransaction.with(controller));
     }
 
     @SuppressLint("SetTextI18n")

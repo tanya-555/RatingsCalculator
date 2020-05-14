@@ -30,6 +30,10 @@ public class RatingsController extends Controller {
         this.callback = callback;
     }
 
+    public void registerCallback(RatingsCallback callback) {
+        this.callback = callback;
+    }
+
     @NonNull
     @Override
     protected View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
